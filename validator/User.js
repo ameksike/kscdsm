@@ -1,5 +1,5 @@
 const { checkSchema } = require('express-validator');
-const run = require('../../app/validator/Validator');
+const run = require('./Validator');
 /**
  * For more information on validations see the link below:
  *  https://express-validator.github.io/docs/schema-validation.html

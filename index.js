@@ -12,51 +12,50 @@ class CdmModule extends KsMf.app.Module {
 
     initConfig() {
         this.helper.configure({ src: ioc });
-        const prefix = "/api/v1" + this.prefix;
         this.routes = [{
-            route: "/api/v1/user",
+            route: this.prefix + "/user",
             controller: 'UserController',
             method: 'rest'
         }, {
-            route: prefix + "/credential",
+            route: this.prefix + "/cdm/credential",
             controller: 'CredentialController',
             method: 'rest'
         }, {
-            route: prefix + "/domain",
+            route: this.prefix + "/cdm/domain",
             controller: 'DomainController',
             method: 'rest'
         }, {
-            route: prefix + "/oauth/authorize",
+            route: this.prefix + "/cdm/oauth/authorize",
             controller: 'OauthController',
             action: 'authorize',
             method: 'get'
         }, {
-            route: prefix + "/oauth/authorize/idp/back",
+            route: this.prefix + "/cdm/oauth/authorize/idp/back",
             controller: 'OauthController',
             action: 'authorizeBack',
             method: 'get'
         }, {
-            route: prefix + "/oauth/authorize/idp/back",
+            route: this.prefix + "/cdm/oauth/authorize/idp/back",
             controller: 'OauthController',
             action: 'authorizeBack',
             method: 'post'
         }, {
-            route: prefix + "/oauth/revoke",
+            route: this.prefix + "/cdm/oauth/revoke",
             controller: 'OauthController',
             action: 'revoke',
             method: 'get'
         }, {
-            route: prefix + "/oauth/revoke/idp/back",
+            route: this.prefix + "/cdm/oauth/revoke/idp/back",
             controller: 'OauthController',
             action: 'revokeBack',
             method: 'get'
         }, {
-            route: prefix + "/oauth/revoke/idp/back",
+            route: this.prefix + "/cdm/oauth/revoke/idp/back",
             controller: 'OauthController',
             action: 'revokeBack',
             method: 'post'
         }, {
-            route: prefix + "/oauth/token",
+            route: this.prefix + "/cdm/oauth/token",
             controller: 'OauthController',
             action: 'token',
             method: 'post'

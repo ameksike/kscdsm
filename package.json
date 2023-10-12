@@ -25,8 +25,9 @@
   },
   "homepage": "https://github.com/ameksike/kscdsm#readme",
   "dependencies": {
+    "express-validator": "^7.0.1",
     "kscryp": "^1.0.13",
-    "ksdp": "^1.2.8",
-    "ksmf": "^1.2.31"
+    "ksdp": "^1.2.9",
+    "ksmf": "^1.2.32"
   }
 }
