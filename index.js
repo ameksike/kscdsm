@@ -11,7 +11,6 @@ const ioc = require("./cfg/ioc.json");
 class CdmModule extends KsMf.app.Module {
 
     initConfig() {
-        //this.opt.cfg;
         this.helper.configure({ src: ioc });
         const prefix = "/api/v1" + this.prefix;
         this.routes = [{
