@@ -2,7 +2,8 @@
   "cdm.service.Credential": {
     "name": "CredentialService",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
@@ -13,7 +14,8 @@
   "cdm.service.CredentialState": {
     "name": "CredentialStateService",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
@@ -24,7 +26,8 @@
   "cdm.service.Domain": {
     "name": "DomainService",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
@@ -35,7 +38,8 @@
   "cdm.service.Account": {
     "name": "AccountService",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
@@ -50,7 +54,8 @@
   "cdm.service.User": {
     "name": "UserService",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
@@ -61,7 +66,8 @@
   "cdm.service.OauthService": {
     "name": "OauthService",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
@@ -71,7 +77,8 @@
   "cdm.service.OauthGoogle": {
     "name": "OauthGoogle",
     "path": "service",
-    "module": "cdm",
+    "module": "kscdsm",
+    "moduleType": "lib",
     "dependency": {
       "dao": "dao",
       "helper": "helper",
