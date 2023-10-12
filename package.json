@@ -1,0 +1,32 @@
+{
+  "name": "kscdsm",
+  "version": "1.0.0",
+  "description": "Ksike Credential-Domain Security Model",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameksike/kscdsm.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Antonio Membrides Espinosa",
+    "email": "tonykssa@gmail.com",
+    "url": "https://github.com/ameksike"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameksike/kscdsm/issues"
+  },
+  "homepage": "https://github.com/ameksike/kscdsm#readme",
+  "dependencies": {
+    "kscryp": "^1.0.13",
+    "ksdp": "^1.2.8",
+    "ksmf": "^1.2.31"
+  }
+}
