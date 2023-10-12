@@ -1,6 +1,6 @@
 {
   "name": "kscdsm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ksike Credential-Domain Security Model",
   "main": "index.js",
   "directories": {
