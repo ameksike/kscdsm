@@ -297,6 +297,11 @@ class OauthController {
         }
     }
 
+    /**
+     * @description Token Revocation: https://datatracker.ietf.org/doc/html/rfc7009#section-2
+     * @param {Object} req 
+     * @param {Object} res 
+     */
     revoke(req, res) {
         res.json({
             action: "revoke",
@@ -342,6 +347,8 @@ class OauthController {
         (payload?.scope) && (res.scope = payload.scope);
         (payload?.state) && (res.state = payload.state);
         (payload?.code) && (res.code = payload.code);
+        (payload?.token) && (res.token = payload.token);
+        (payload?.token_type_hint) && (res.tokenTypeHint = payload.token_type_hint); // access_token / refresh_token
 
         (req?.headers['user-agent']) && (res.userAgent = req.headers['user-agent']);
         (payload?.affiliate) && (res.affiliate = payload.affiliate);
